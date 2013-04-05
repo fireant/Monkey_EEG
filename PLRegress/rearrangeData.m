@@ -1,7 +1,7 @@
 %Clear all the previous data
 clear
 %Load the motion matrix as in the downloaded files in the Wiki
-
+%You have to change the location of the files depending on where you have them
 load('/home/leon/Data/Monkey/20090611S1_FTT_A_ZenasChao_mat_ECoG32-Motion12/Motion.mat')
 %Specify the number of channels
 NoChannels=32

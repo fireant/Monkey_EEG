@@ -5,17 +5,17 @@ clear
 load('/home/leon/Data/Monkey/20090611S1_FTT_A_ZenasChao_mat_ECoG32-Motion12/Motion.mat')
 %Specify the number of channels
 NoChannels=32
-%Declare an empty array to store the training data
+%Declare an empty array to store the data
 MasterArray=[]
 %This part iterates over all the files and append them in MasterArray, these files have been previously processed by 
 for i=1:NoChannels
         direct='/home/leon/Data/Monkey/Features/features_ch';
-        infile=strcat(direct,num2str(i),'.mat');
+        infile=strcat(direct,num2str(i),'.mat'); %This just createes the dynamic filenames (infile)
         load(infile);
         for j=1:length(featTime)
-                Temp(j,:)=featTime{j,1};
+                Temp(j,:)=featTime{j,1}; %Store everything in a temporal matrix
         end
-        MasterArray=[MasterArray Temp];
+        MasterArray=[MasterArray Temp]; %Concatenate the temporal array in the Master Input data
 end
 
 
