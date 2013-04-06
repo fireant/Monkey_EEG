@@ -10,7 +10,7 @@ NoChannels=32
 MasterArray=[]
 %This part iterates over all the files and append them in MasterArray, these files have been previously processed by 
 for i=1:NoChannels
-        direct='/home/leon/Data/Monkey/50ms/features_ch';
+        direct='/home/leon/Data/Monkey/Features/features_ch';
         infile=strcat(direct,num2str(i),'.mat'); %This just createes the dynamic filenames (infile)
         load(infile);
         for j=1:length(featTime)
