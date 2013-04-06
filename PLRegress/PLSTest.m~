@@ -1,5 +1,5 @@
 
-NoComponents=20;%NoCOmponents states the final number of components 
+NoComponents=30;%NoCOmponents states the final number of components 
 %MasterArray contains a Tx3200 Feature matrix (Channelsx10x10)
 X=MasterArray;
 %NewMotionData has the normalized and aligned Motion Data from rearrandeData.m
